@@ -116,10 +116,11 @@ args = inputField.getText().split(" ");
 if (args.length == 3) {
                     selectedTarget = new Coords(Integer.parseInt(args[1]) - 1, Integer
                             .parseInt(args[2]) - 1);
-// Cursor over the hex..
-((BoardView1) gui.bv).mouseAction(selectedTarget, BoardViewEvent.BOARD_HEX_CURSOR, InputEvent.BUTTON1_MASK);
+// Why don't constants work here?
+// Cursor over the hex.
+((BoardView1) gui.bv).mouseAction(selectedTarget, 3, InputEvent.BUTTON1_MASK);
 //CLick.
-((BoardView1) gui.getBoardView()).mouseAction(selectedTarget, BoardViewEvent.BOARD_HEX_CLICKED, InputEvent.BUTTON1_MASK);
+((BoardView1) gui.getBoardView()).mouseAction(selectedTarget, 1, InputEvent.BUTTON1_MASK);
 }
 }
     private void systemEvent(String s) {
