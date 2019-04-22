@@ -72,7 +72,7 @@ public class ShowTileCommand extends ClientCommand {
                 }
 
                 i++;
-            } while (i < args.length);
+            } while (i <= args.length);
 
             return report;
         } catch (NumberFormatException nfe) {
