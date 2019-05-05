@@ -105,7 +105,7 @@ public class DeployCommand extends ClientCommand {
                         + (Math.max(minx, width / 3) + 1) + " MinY: "
                         + (Math.max(miny, height / 3) + 1) + " MaxX: "
                         + (Math.min(maxx, 2 * width / 3) + 1) + " MaxY: "
-                        + (Math.min(miny, 2 * height / 3) + 1);
+                        + (Math.min(maxy, 2 * height / 3) + 1);
             default: // ummm. .
                 return "Something went wrong, unknown deployment schema.";
         }
